@@ -10,28 +10,12 @@ class HomePage extends StatefulWidget {
 }
 
 class HomePageState extends State<HomePage> {
-  int counter = 0;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: MyHamburguer(),
-      appBar: AppBar(
-          title: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                  Image.asset(
-                 'assets/images/logo_rolls5.png',
-                  fit: BoxFit.contain,
-                  height: 45,
-              ),
-              Container(
-                  padding: const EdgeInsets.only(top: 3,bottom: 3, right: 70),
-                    child: Text("Roll's"))                 
-            ],
-
-          ),
-  ),
+      appBar: MyAppBar(),
       
       body: Column(
   children: [
@@ -116,7 +100,6 @@ class HomePageState extends State<HomePage> {
         child:Icon(Icons.add),
         onPressed: () {
           setState(() {
-            counter++;
           });
           },
       ),

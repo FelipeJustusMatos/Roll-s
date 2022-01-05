@@ -62,8 +62,8 @@ class _LoguinPageState extends State<LoguinPage> {
                           SizedBox(
                             height: 10,
                           ),
-                          RaisedButton(
-                            color: Colors.lightBlue,
+                          ElevatedButton(
+                            //color: //Colors.lightBlue,
                             onPressed: () {
                               if (email == 'felip@gmail.com' &&
                                   password == '123') {
